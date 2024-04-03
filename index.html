@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+body{background-color: cyan;}
+        .main {
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80vh;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        #signInForm {
+            height: 70vh;
+            width: 40%;
+            border: 2px solid black;
+            margin-left: 30px;
+            /* padding: 60px 0px; */
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: space-between;
+            background-color: rgb(28, 103, 241);
+            border: 3px solid black;
+           
+        }
+
+
+        h1 {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            height: 15vh;
+            width: 100%;
+            padding: 12px;
+            background-color: cyan;
+
+        }
+
+
+        #name {
+
+
+            height: 6vh;
+            width: 79%;
+        }
+
+        #description {
+
+
+            height: 6vh;
+            width: 73%;
+        }
+
+        #image {
+
+
+            height: 6vh;
+            width: 73%;
+        }
+
+        #field1 {
+
+
+            height: 6vh;
+            width: 75%;
+        }
+
+        #field2 {
+
+
+            height: 6vh;
+            width: 79%;
+        }
+
+        #field3 {
+
+
+            height: 6vh;
+            width: 79%;
+        }
+
+        .name {
+
+            margin-left: 30px;
+            margin-bottom: 5px;
+            margin-top: 12px;
+        }
+
+        .img {
+            margin-left: 10px;
+            margin-top: 5px;
+
+        }
+
+
+        .price {
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+
+        .quantity {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .color {
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .card {
+            background-color: rgb(248, 195, 244);
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-right: 20px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 70vh;
+            width: 50%;
+            font-size: medium;
+            border: 3px solid black;
+        }
+
+        .card img {
+            width: 40%;
+            height: 40%;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            width: 40%;
+            height: 5vh;
+        }
+
+
+        .card p {
+            width: 50%;
+            height: 5vh;
+            padding: 20px;
+            margin: 0 auto;
+
+
+        }
+
+        button {
+            height: 40PX;
+            width: 70px;
+
+            color: white;
+            background-color: green;
+            border: 2PX solid green;
+            margin-left: 200px;
+            border-radius: 10px;
+        }
+
+
+        @media only screen and (max-width: 790px) {
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #signInForm {
+                margin-top: 12px;
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 12px;
+                border: 3px solid black;
+
+
+
+            }
+
+            #name {
+
+
+                height: 4vh;
+                width: 70%;
+            }
+
+            #description {
+
+
+                height: 4vh;
+                width: 60%;
+            }
+
+            #image {
+
+
+                height: 4vh;
+                width: 60%;
+            }
+
+            #field1 {
+
+
+                height: 4vh;
+                width: 65%;
+            }
+
+            #field2 {
+
+
+                height: 4vh;
+                width: 74%;
+            }
+
+            #field3 {
+
+
+                height: 4vh;
+                width: 74%;
+            }
+
+
+            .card {
+                width: 60%;
+                margin-left: 41px;
+margin-top: 12px;
+                border: 3px solid black;
+            }
+
+
+            button {
+                height: 40PX;
+                width: 70px;
+                color: white;
+                background-color: green;
+                border: 2PX solid green;
+               margin: 0px;
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+
+        <h1>Welcome </h1>
+
+        <div class="container">
+
+            <form id="signInForm">
+                <div class="name">
+                    <label for="name">Name :</label>
+                    <input type="text" id="name" name="name" placeholder="Enter NAME">
+                </div>
+                <div class="des">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" name="description" placeholder="Enter Description" required>
+
+
+                </div>
+                <div class="img">
+                    <label for="image">Image Url:</label>
+                    <input type="text" id="image" name="image" placeholder="Enter ImgUrl" required>
+                </div>
+                <div class="quantity"> <label for="field1">Quantity</label>
+                    <input type="text" id="field1" placeholder="Enter Quantity" required>
+                </div>
+                <div class="price"> <label for="field2">Price</label>
+                    <input type="text" id="field2" placeholder="Enter Price" required>
+                </div>
+                <div class="color"> <label for="field3">Color</label>
+                    <input type="text" id="field3" placeholder="Enter Color" required>
+                </div>
+
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="cardDisplay" class="card"></div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('signInForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const description = document.getElementById('description').value;
+            const imageUrl = document.getElementById('image').value;
+            var field1 = document.getElementById("field1").value;
+            var field2 = document.getElementById("field2").value;
+            var field3 = document.getElementById("field3").value;
+
+            const cardDisplay = document.getElementById('cardDisplay');
+            cardDisplay.innerHTML = `
+                <img src="${imageUrl}" alt="IMAGE">
+                <h3>Name:${name}</h3>
+                <p> Description:${description}</p>
+                <p>Quantity: ${field1}</p>
+                <p>Price: ${field2}</p>
+                <p>Color: ${field3}</p>
+                
+ 
+            `;
+        });
+    </script>
+</body>
+
+</html>
