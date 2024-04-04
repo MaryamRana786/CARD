@@ -11,8 +11,13 @@
             margin: 0;
             box-sizing: border-box;
         }
-/* /* body{background-color: cyan;}* */
-        .main { 
+
+
+        body {
+            background-image: linear-gradient(to bottom right, rgb(48, 13, 66), rgb(88, 255, 241),rgb(245, 159, 0),rgb(201, 35, 243),blue);
+        }
+
+        .main {
             height: 100vh;
             width: 100%;
 
@@ -24,7 +29,14 @@
             align-items: center;
             height: 80vh;
             width: 100%;
-            background-color: whitesmoke;
+            /* background-color: whitesmoke; */
+          /* background-repeat: no-repeat;
+          background-size: 1200px 700px;
+          
+          background-image: url(https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-61265.jpg?w=360); */
+       
+          background-image: linear-gradient(to bottom right, rgb(48, 13, 66), rgb(88, 255, 241),rgb(245, 159, 0),rgb(201, 35, 243),blue);
+       
         }
 
         #signInForm {
@@ -37,21 +49,21 @@
             flex-direction: column;
             /* align-items: center; */
             justify-content: space-between;
-            background-color: rgb(28, 103, 241);
+            background-color: rgb(3, 19, 49);
             border: 3px solid black;
             color: white;
-            font-weight: 1000;
+            /* font-weight: 1000; */
         }
 
 
         h1 {
             font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
             font-size: 60px;
-            font-weight: 600;
+            font-weight: 900;
             height: 15vh;
             width: 100%;
             padding: 12px;
-            background-color: cyan;
+            background-color: rgb(88, 255, 255);
 
         }
 
@@ -128,7 +140,7 @@
         }
 
         .card {
-            background-color: rgb(248, 195, 244);
+            background-color: rgb(136, 2, 125);
             border: 1px solid #ccc;
             padding: 10px;
             margin-right: 20px;
@@ -137,7 +149,7 @@
             flex-direction: column;
             align-items: center;
             height: 70vh;
-            color: rgb(0, 1, 54);
+            color: rgb(240, 234, 238);
             width: 50%;
             font-weight: 1000;
             font-size: medium;
@@ -170,13 +182,21 @@
             width: 70px;
 
             color: white;
-            background-color: green;
-            border: 2PX solid green;
+            background-color: rgb(0, 65, 0);
+            border: 2PX solid rgb(29, 255, 29);
             margin-left: 200px;
             border-radius: 10px;
         }
 
+        button:hover {
+            height: 40PX;
+            width: 70px;
 
+            color: white;
+            background-color: rgb(23, 189, 23);
+            border: 2PX solid  rgb(0, 65, 0);
+            margin-left: 200px;
+            border-radius: 10px;}
         @media only screen and (max-width: 1165px) {
 
             .container {
@@ -193,11 +213,14 @@
                 justify-content: space-between;
                 border-radius: 12px;
                 border: 3px solid black;
-color: white;
-font-size: large;
+                color: white;
+                font-size: large;
 
 
             }
+
+            .card p{width: 90%;}
+
 
             #name {
 
@@ -245,11 +268,11 @@ font-size: large;
             .card {
                 width: 60%;
                 margin-left: 41px;
-margin-top: 12px;
-color: white;
-font-size: large;
-color: rgb(0, 1, 54);
-font-size: large;
+                margin-top: 12px;
+                color: white;
+                font-size: large;
+                /* color: rgb(0, 1, 54); */
+                font-size: large;
                 border: 3px solid black;
             }
 
@@ -258,11 +281,82 @@ font-size: large;
                 height: 40PX;
                 width: 70px;
                 color: white;
-                background-color: green;
-                border: 2PX solid green;
-               margin: 0px;
+                background-color: rgb(0, 128, 111);
+                border: 2PX solid rgb(0, 34, 128);
+                margin: 0px;
                 border-radius: 10px;
             }
+            button:hover {
+                height: 40PX;
+                width: 70px;
+                color: white;
+                background-color: rgb(13, 6, 116);
+                border: 2PX solid rgb(0, 34, 128);
+                margin: 0px;
+                border-radius: 10px;
+            }
+        }
+
+        @media only screen and (max-width: 1165px) {
+
+#signInForm{
+
+    width: 40%;
+}
+
+
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+#signInForm{width: 80%;}
+            .card p{width: 90%;}
+
+            #name {
+
+
+                height: 4vh;
+                width: 50%;
+            }
+
+            #description {
+
+
+                height: 4vh;
+                width: 40%;
+            }
+
+            #image {
+
+
+                height: 4vh;
+                width: 40%;
+            }
+
+            #field1 {
+
+
+                height: 4vh;
+                width: 45%;
+            }
+
+            #field2 {
+
+
+                height: 4vh;
+                width: 54%;
+            }
+
+            #field3 {
+
+
+                height: 4vh;
+                width: 54%;
+            }
+
+
         }
     </style>
 </head>
